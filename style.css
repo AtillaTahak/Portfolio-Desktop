@@ -24,6 +24,21 @@ nav {
   justify-content: space-between;
 }
 
+.nav-left {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    transform: rotate(270deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -106,6 +121,18 @@ a:hover {
   font-size: 32px;
   line-height: 44px;
   color: #fff;
+}
+
+.intro-text h2:hover {
+  transform: translate(10px);
+}
+
+.intro-text h1:hover {
+  transform: translate(10px);
+}
+
+.intro-text p:hover {
+  transform: translate(10px);
 }
 
 .intro-page p {
@@ -214,6 +241,10 @@ a:hover {
   height: auto;
 }
 
+.body-first-project img:hover {
+  transform: scale(1.1);
+}
+
 .body-first-project span {
   font-style: normal;
   font-weight: normal;
@@ -228,6 +259,14 @@ a:hover {
   font-size: 20px;
   line-height: 28px;
   color: #091e42;
+}
+
+.body-first-project p:hover {
+  transform: translate(10px);
+}
+
+.body-first-project span:hover {
+  transform: translate(10px);
 }
 
 .project-context {
@@ -321,6 +360,18 @@ a:hover {
   background-repeat: no-repeat;
   width: 369px;
   height: 435px;
+}
+
+.context-projects-1:hover {
+  transform: scale(1.1);
+}
+
+.context-projects-2:hover {
+  transform: scale(1.1);
+}
+
+.context-projects-3:hover {
+  transform: scale(1.1);
 }
 
 .context-projects-1 button {
