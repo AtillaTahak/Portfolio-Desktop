@@ -16,7 +16,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://atillatahak.github.io/Portfolio-middle//)
+[Live Demo Link](https://atillatahak.github.io/Portfolio-Desktop/index.html/)
 
 
 ## Getting Started
