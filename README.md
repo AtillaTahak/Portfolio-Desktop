@@ -3,7 +3,6 @@
 # Microverse Portfolio-middle
 
 
-![screenshot](./app_screenshot.png)
 ![screenshot](./app_screenshot1.png)
 ![screenshot](./app_screenshot2.png)
 
