@@ -1,76 +1,40 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Microverse Portfolio-middle
 
-> One paragraph statement about the project.
 
-![screenshot](./app_screenshot.png)
+![screenshot](./app_screenshot1.png)
+![screenshot](./app_screenshot2.png)
 
-Additional description about the project and its features.
+**This is my portfolio project for microverse
+
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+-Html
+-Css
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://atillatahak.github.io/Portfolio-middle//)
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+**For the first milestone in the process of creating your portfolio website, you will:
 
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+set up a new repository and prepare it for development using best practices (e.g. linters).
+build the first 3 sections of the mobile website using the template you chose in the previous step.
 
 ## Authors
 
-👤 **Author1**
+- GitHub: [@AtillaTahak](https://github.com/AtillaTahak)
+- Twitter: [@AtillaTahaa]https://twitter.com/AtillaTahaa)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/atilla-taha-kördüğüm-a93702186/)
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
-
-## Show your support
-
-Give a ⭐️ if you like this project!
 
 ## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
+-Thanks to Microverse
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
