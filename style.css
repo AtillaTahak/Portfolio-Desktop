@@ -431,6 +431,7 @@ footer ul {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   justify-content: center;
+  align-content: center;
   margin-top: 24px;
   margin-left: 24px;
   grid-gap: 24px;
@@ -590,6 +591,8 @@ footer ul {
 .sublist {
   display: flex;
   flex-direction: column;
+  align-content: center;
+  align-items: center;
 }
 
 .section-contact {
@@ -662,7 +665,6 @@ textarea::placeholder {
 @media (max-width: 992px) {
   .section-contact {
     flex-direction: column;
-    justify-content: center;
     justify-items: center;
     align-items: center;
     height: 200vh;
@@ -829,6 +831,7 @@ textarea::placeholder {
 
   .about-language ul {
     flex-direction: column;
+    align-items: center;
   }
 
   .body-context-projects {
