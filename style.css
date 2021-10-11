@@ -848,7 +848,7 @@ textarea::placeholder {
 .mobile-menu-list {
   display: none;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   list-style: none;
   position: absolute;
   left: 0;
