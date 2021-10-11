@@ -21,7 +21,7 @@
                 <ul>
                     <li><a href="#">Portfolio</a></li>
                     <li> <a href="#">About</a> </li>
-                    <li> <a href="#">Contact</a> </li>
+                    <li> <a href="#contact">Contact</a> </li>
                     <li class="fas fa-envelope-square"></li>
                 </ul>
             </div>
@@ -31,8 +31,16 @@
                <a href="#"><span class="app-bar-name">Atilla Taha</span></a>
             </div>
             <nav class="app-bar-right">
-                <i class="fa fa-bars"></i>
+                <i id="mobile-menu" class="fa fa-bars"></i>
             </nav>
+
+                <ul class="mobile-menu-list" >
+                    <i class="fas fa-times"></i>
+                    <li class="mobile-menu-list-li margin-li"><a href="#">Portfolio</a></li>
+                    <li class="mobile-menu-list-li" > <a href="#">About</a> </li>
+                    <li class="mobile-menu-list-li"> <a href="#contact">Contact</a> </li>
+                </ul>
+
 
         </div>
     </header>
@@ -198,7 +206,7 @@
                 </ul>
             </div>
         </section>
-        <section class="section-contact">
+        <section class="section-contact" id="contact">
             <div class="contact-text">
                 <p>
                     I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
@@ -235,5 +243,6 @@
       
         gtag('config', 'G-7X8T60SCTL');
       </script>
+      <script src="js/index.js"></script>
 </body>
 </html>
