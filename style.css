@@ -866,6 +866,7 @@ textarea::placeholder {
 }
 
 .mobile-menu-list-li {
+  width: 100%;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
