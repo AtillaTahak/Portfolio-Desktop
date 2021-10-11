@@ -844,44 +844,43 @@ textarea::placeholder {
     margin-left: 24px;
   }
 }
-.mobile-menu-list{
-  display: flex;
+
+.mobile-menu-list {
+  display: none;
   flex-direction: column;
   align-items: center;
   list-style: none;
   position: absolute;
-  left: 0px;
-  right: 0px;
-  top: 0px;
+  left: 0;
+  right: 0;
+  top: 0;
   bottom: 57px;
-  background: #3C3A39;
+  background: #3c3a39;
   mix-blend-mode: normal;
-  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
-  display: none;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
   height: 100vh;
-
 }
-.margin-li{
+
+.margin-li {
   margin-top: 119px;
 }
-.mobile-menu-list-li{
 
-
-font-style: normal;
-font-weight: bold;
-font-size: 32px;
-line-height: 44px;
-
-z-index: 1;
-
-color: #FFF5E1;
+.mobile-menu-list-li {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  z-index: 1;
+  color: #fff5e1;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #6f6c6b;
+  padding-bottom: 15px;
 }
-.fa-times{
+
+.fa-times {
   position: absolute;
   left: 90%;
-  top:5%;
-
+  top: 5%;
   height: 12px;
   width: 12px;
-  
 }
