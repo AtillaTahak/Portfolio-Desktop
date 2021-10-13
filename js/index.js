@@ -18,24 +18,33 @@ listitem.addEventListener('click', () => {
 });
 
 const myRecentWorkNorm = document.querySelector('.section-body');
+const myRecentWorkNormMain = document.querySelector('.main');
+
 const myRecentWorkNormAbout = document.querySelector('.section-about');
 const myRecentWorkNormContact = document.querySelector('.section-contact');
 const myRecentWorkNormFooter = document.querySelector('footer');
 const myRecentModalSection = document.querySelector('.recent-work-model');
+const myRecentModalIntro = document.querySelector('.intro-page');
 
 document.addEventListener('click', (event) => {
   if (event.target.matches('.modal2')) {
     myRecentWorkNorm.style.display = 'grid';
     myRecentModalSection.style.display = 'none';
+    myRecentWorkNormMain.style.height = 'auto';
+
     myRecentWorkNormAbout.style.display = 'grid';
     myRecentWorkNormContact.style.display = 'flex';
     myRecentWorkNormFooter.style.display = 'block';
+    myRecentModalIntro.style.display = 'grid';
   } else if (event.target.matches('.main')) {
     myRecentWorkNorm.style.display = 'grid';
     myRecentModalSection.style.display = 'none';
+    myRecentWorkNormMain.style.height = 'auto';
+
     myRecentWorkNormAbout.style.display = 'grid';
     myRecentWorkNormContact.style.display = 'flex';
     myRecentWorkNormFooter.style.display = 'block';
+    myRecentModalIntro.style.display = 'grid';
   }
 }, false);
 
@@ -72,11 +81,17 @@ window.addEventListener('load', () => {
   const myRecentWorkNormContact = document.querySelector('.section-contact');
   const myRecentWorkNormFooter = document.querySelector('footer');
   const myRecentModalSection = document.querySelector('.recent-work-model');
+  const myRecentWorkNormMain = document.querySelector('.main');
 
   const myRecentModalImg = document.getElementById('modal-img');
   const myRecentModalP = document.querySelector('#modal-p');
   const myRecentModalTitle = document.querySelector('#modal-title');
   const myRecentModalTags = document.querySelector('#modal-tag');
+
+  const myRecentModalBtnLive = document.querySelector('#modal-see-btn');
+  const myRecentModalBtnSrc = document.querySelector('#modal-source-btn');
+
+  // modal-source-btn
 
   // recents modal
 
@@ -90,18 +105,24 @@ window.addEventListener('load', () => {
       title: myRecentWorkFirstTitle.innerText,
       paragraph: myRecentWorkFirstP.innerText,
       tags: myRecentWorkFirstTags.innerHTML,
+      btnlive: 'https://google.com',
+      btnsrc: 'https://google.com',
     },
     second: {
       img: myRecentWorkSecondImg.backgroundImage.slice(4, -1).replace(/["']/g, ''),
       title: myRecentWorkSecondSpan.innerText,
       paragraph: myRecentWorkSecondP.innerText,
       tags: myRecentWorkSecondLi.innerHTML,
+      btnlive: 'https://google.com',
+      btnsrc: 'https://google.com',
     },
     third: {
       img: myRecentWorkThirdImg.backgroundImage.slice(4, -1).replace(/["']/g, ''),
       title: myRecentWorkThirdSpan.innerText,
       paragraph: myRecentWorkThirdP.innerText,
       tags: myRecentWorkThirdLi.innerHTML,
+      btnlive: 'https://google.com',
+      btnsrc: 'https://google.com',
     },
 
   };
@@ -115,36 +136,49 @@ window.addEventListener('load', () => {
       if (modal === '1') {
         myRecentWorkNorm.style.display = 'none';
         myRecentModalSection.style.display = 'flex';
+        myRecentWorkNormMain.style.height = '100vh';
         myRecentWorkNormAbout.style.display = 'none';
         myRecentWorkNormContact.style.display = 'none';
         myRecentWorkNormFooter.style.display = 'none';
+        myRecentModalIntro.style.display = 'none';
+
         myRecentModalImg.src = myRecentWork.first.img;
         myRecentModalP.innerText = myRecentWork.first.paragraph;
         myRecentModalTags.innerHTML = myRecentWork.first.tags;
+        myRecentModalBtnLive.href = myRecentWork.first.btnlive;
+        myRecentModalBtnSrc.href = myRecentWork.first.btnsrc;
       } else if (modal === '2') {
         myRecentWorkNorm.style.display = 'none';
         myRecentModalSection.style.display = 'flex';
+        myRecentWorkNormMain.style.height = '100vh';
         myRecentWorkNormAbout.style.display = 'none';
         myRecentWorkNormContact.style.display = 'none';
         myRecentWorkNormFooter.style.display = 'none';
+        myRecentModalIntro.style.display = 'none';
 
         myRecentModalImg.src = myRecentWork.second.img;
         myRecentModalP.innerText = myRecentWork.second.paragraph;
         myRecentModalTags.innerHTML = myRecentWork.second.tags;
+        myRecentModalBtnLive.href = myRecentWork.second.btnlive;
+        myRecentModalBtnSrc.href = myRecentWork.second.btnsrc;
 
         myRecentModalTitle.innerText = myRecentWork.second.title;
       } else {
         myRecentWorkNorm.style.display = 'none';
         myRecentModalSection.style.display = 'flex';
+        myRecentWorkNormMain.style.height = '100vh';
         myRecentWorkNormAbout.style.display = 'none';
         myRecentWorkNormContact.style.display = 'none';
         myRecentWorkNormFooter.style.display = 'none';
+        myRecentModalIntro.style.display = 'none';
 
         myRecentModalImg.src = myRecentWork.third.img;
         myRecentModalP.innerText = myRecentWork.third.paragraph;
         myRecentModalTags.innerHTML = myRecentWork.third.tags;
 
         myRecentModalTitle.innerText = myRecentWork.third.title;
+        myRecentModalBtnLive.href = myRecentWork.third.btnlive;
+        myRecentModalBtnSrc.href = myRecentWork.third.btnsrc;
       }
     });
   });

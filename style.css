@@ -224,6 +224,16 @@ footer ul {
   color: #172b4d;
 }
 
+.recent-work-p {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.recont-work-btn {
+  display: flex;
+}
+
 .recent-work-p p {
   font-style: normal;
   font-weight: normal;
@@ -349,12 +359,15 @@ footer ul {
   line-height: 24px;
 }
 
-.recent-work-p button {
+.recent-work-p a {
+  text-decoration: none;
   background-color: #f55800;
   width: 134px;
-  height: 48px;
-  border: none;
-  margin-top: 5%;
+  text-align: center;
+  align-items: center;
+  padding-top: 5px;
+  border: 1px solid #f55800;
+  margin-right: 10px;
 }
 
 .body-context-button > button {
@@ -882,6 +895,12 @@ textarea::placeholder {
   }
 }
 
+@media (min-width: 1100px) {
+  .recent-work-p a {
+    margin-top: 20%;
+  }
+}
+
 .mobile-menu-list {
   display: none;
   flex-direction: column;
@@ -965,7 +984,7 @@ textarea::placeholder {
   color: white;
 }
 
-.recent-work-p button:hover {
+.recent-work-p a:hover {
   background: #fff5e1;
   border: 1px solid #f55800;
   box-sizing: border-box;
