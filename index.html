@@ -28,25 +28,25 @@
         </nav>
         <div class="app-bar">
             <div class="app-bar-left">
-               <a href="#"><span class="app-bar-name">Atilla Taha</span></a>
+                <a href="#"><span class="app-bar-name">Atilla Taha</span></a>
             </div>
             <nav class="app-bar-right">
                 <i id="mobile-menu" class="fa fa-bars"></i>
             </nav>
 
-                <ul class="mobile-menu-list" >
-                    <li><i class="fas fa-times"></i></li>
-                    <li class="mobile-menu-list-li margin-li"><a href="#">Portfolio</a></li>
-                    <li class="mobile-menu-list-li" > <a href="#">About</a> </li>
-                    <li class="mobile-menu-list-li"> <a href="#contact">Contact</a> </li>
-                </ul>
+            <ul class="mobile-menu-list">
+                <li><i class="fas fa-times modal1"></i></li>
+                <li class="mobile-menu-list-li margin-li"><a href="#">Portfolio</a></li>
+                <li class="mobile-menu-list-li"> <a href="#">About</a> </li>
+                <li class="mobile-menu-list-li"> <a href="#contact">Contact</a> </li>
+            </ul>
 
 
         </div>
     </header>
     <div class="main">
         <section class="intro-page">
-         
+
             <div class="intro-text">
                 <h1>Hey There.
                     Atilla Taha</h1>
@@ -84,21 +84,22 @@
 
                 </div>
                 <div class="project-context">
-                    <span>Multi-Post Stories</span>
-                    <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
+                    <span id="myRecentWorktitle1">Multi-Post Stories</span>
+                    <p id="myRecentWorkP1">A daily selection of privately personalized reads; no accounts or sign-ups
+                        required. has been the
                         industry's standard dummy text ever since the 1500s, when an unknown printer took a standard
                         dummy text.</p>
                     <div class="body-context-tag">
-                        <ul>
-                            <li>css</li>
-                            <li>html</li>
-                            <li>bootstrap</li>
-                            <li>Ruby</li>
+                        <ul id="myRecentWorkLi1">
+                            <li class="myRecentWorkLi1">css</li>
+                            <li class="myRecentWorkLi1">html</li>
+                            <li class="myRecentWorkLi1">bootstrap</li>
+                            <li class="myRecentWorkLi1">Ruby</li>
                         </ul>
 
                     </div>
                     <div class="body-context-button">
-                        <button type="button">
+                        <button data-model="1" class="modal-button" type="button">
                             See Project
                         </button>
                     </div>
@@ -113,60 +114,106 @@
                     <span>Data Dashboard Healthcare</span>
                     <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
                         industry's standard</p>
-                    <ul>
-                        <li>Html</li>
-                        <li>Boostrap</li>
-                        <li>Ruby</li>
+                    <ul class="myRecentWorkSecondLi">
+                        <li class="myRecentWorkSecondLi">Html</li>
+                        <li class="myRecentWorkSecondLi">Boostrap</li>
+                        <li class="myRecentWorkSecondLi">Ruby</li>
                     </ul>
+                    <button data-model="2" class="seeProject modal-button">See Project</button>
                 </div>
-                <div class="context-projects-3">
+                <div id="project-3" class="context-projects-3">
                     <span>Data Dashboard Healthcare</span>
                     <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
                         industry's standard</p>
-                    <ul>
-                        <li>Html</li>
+                    <ul class="myRecentWorkThirdLi">
+                        <li >Html</li>
                         <li>Boostrap</li>
-                        <li>Ruby</li>
+                        <li >Ruby</li>
                     </ul>
+                    <button data-model="3"  class="seeProject modal-button">See Project</button>
                 </div>
                 <div class="context-projects-2">
                     <span>Data Dashboard Healthcare</span>
                     <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
                         industry's standard</p>
-                    <ul>
-                        <li>Html</li>
-                        <li>Boostrap</li>
-                        <li>Ruby</li>
+                    <ul class="myRecentWorkSecondLi">
+                        <li class="myRecentWorkSecondLi">Html</li>
+                        <li class="myRecentWorkSecondLi">Boostrap</li>
+                        <li class="myRecentWorkSecondLi">Ruby</li>
                     </ul>
+                    <button data-model="2" class="seeProject modal-button">See Project</button>
+
                 </div>
                 <div class="context-projects-3">
                     <span>Data Dashboard Healthcare</span>
                     <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
                         industry's standard</p>
-                    <ul>
+                    <ul class="myRecentWorkThirdLi">
                         <li>Html</li>
                         <li>Boostrap</li>
                         <li>Ruby</li>
                     </ul>
+                    <button data-model="3" class="seeProject modal-button">See Project</button>
+
                 </div>
                 <div class="context-projects-3">
                     <span>Data Dashboard Healthcare</span>
                     <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
                         industry's standard</p>
-                    <ul>
+                    <ul class="myRecentWorkThirdLi">
                         <li>Html</li>
                         <li>Boostrap</li>
                         <li>Ruby</li>
                     </ul>
+                    <button data-model="3" class="seeProject modal-button">See Project</button>
+
                 </div>
             </div>
+
+        </section>
+        <section class="recent-work-model">
+            <div class="recent-work-time">
+                <h2 id="modal-title">Keeping track of hundreds of components website</h2>
+                <i class="fas fa-times modal2"></i>
+            </div>
+
+
+            <ul id="modal-tag">
+
+            </ul>
+            <div class="recent-work-model-container">
+                <div class="recent-work-img">
+                    <img id="modal-img" src="./img/project1.png" alt="">
+                </div>
+                <div class="recent-work-p">
+                    <p id="modal-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                        Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                        took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of
+                        the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with
+                        the releax map lapora verita.</p>
+                    <div class="recont-work-btn" >
+
+                        <a id="modal-see-btn" >See Live<span class="icon1"></span></a>
+                        <a id="modal-source-btn">See Source<span class="icon2"></span></a>
+
+    
+                    </div>    
+
+                    
+                </div>
+
+            </div>
+
 
         </section>
         <section class="section-about">
             <div class="about-text">
                 <h2>About me</h2>
                 <p>
-                    Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
+                    Hello I’m a software developer! I can help you build a product , feature or website Look through
+                    some of my work and experience! If you like what you see and have a project you need coded, don’t
+                    hestiate to contact me.
                 </p>
                 <button class="about-button" type="button">
                     Get My Resume
@@ -174,7 +221,7 @@
                 <div class="about-background"></div>
             </div>
             <hr>
-       
+
             <div class="about-language">
                 <ul>
                     <li class="languages">Languages
@@ -214,12 +261,13 @@
 
             </div>
             <div class="contact-form">
-                    <form action="https://formspree.io/f/moqybakj" method="POST">
-                        <input type="text" placeholder="Full Name" required maxlength="30" >
-                        <input type="email" placeholder="Email" maxlength="30">
-                        <textarea name="message" id="message" cols="38" rows="7" maxlength="500" placeholder="Enter text here"></textarea>
-                        <input type="submit" value="Get in touch" class="button">
-                      </form>
+                <form action="https://formspree.io/f/moqybakj" method="POST">
+                    <input type="text" placeholder="Full Name" required maxlength="30">
+                    <input type="email" placeholder="Email" maxlength="30">
+                    <textarea name="message" id="message" cols="38" rows="7" maxlength="500"
+                        placeholder="Enter text here"></textarea>
+                    <input type="submit" value="Get in touch" class="button">
+                </form>
             </div>
 
         </section>
@@ -238,11 +286,12 @@
 
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-      
+
         gtag('config', 'G-7X8T60SCTL');
-      </script>
-      <script src="js/index.js"></script>
+    </script>
+    <script src="js/index.js"></script>
 </body>
+
 </html>
