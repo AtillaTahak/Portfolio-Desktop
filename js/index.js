@@ -4,6 +4,12 @@ const introPage = document.querySelector('.intro-page');
 const times = document.querySelector('.fa-times');
 const listitem = document.querySelector('.mobile-menu-list');
 
+const contactValues = {};
+const form = document.querySelector('#contact-form');
+const email = document.querySelector('#email');
+const contactName = document.querySelector('#name');
+const contactMessage = document.querySelector('#message');
+
 menu.addEventListener('click', () => {
   introPage.style.display = 'none';
   menuList.style.display = 'flex';
@@ -49,23 +55,16 @@ document.addEventListener('click', (event) => {
 }, false);
 
 window.addEventListener('load', () => {
-  // first recent
   const myRecentWorkFirstTitle = document.querySelector('#myRecentWorktitle1');
   const myRecentWorkFirstP = document.querySelector('#myRecentWorkP1');
   const myRecentWorkFirstImg = document.querySelector('.project-img img').src;
   const myRecentWorkFirstTags = document.querySelector('#myRecentWorkLi1');
-  // first recent
 
-  // second recent
   const myRecentWorkSecond = document.querySelector('.context-projects-2');
   const myRecentWorkSecondImg = getComputedStyle(myRecentWorkSecond);
   const myRecentWorkSecondSpan = document.querySelector('.context-projects-2 span');
   const myRecentWorkSecondP = document.querySelector('.context-projects-2 p');
   const myRecentWorkSecondLi = document.querySelector('.myRecentWorkSecondLi');
-
-  // second recent
-
-  // third recent
 
   const myRecentWorkThird = document.querySelector('.context-projects-3');
   const myRecentWorkThirdImg = getComputedStyle(myRecentWorkThird);
@@ -73,9 +72,6 @@ window.addEventListener('load', () => {
   const myRecentWorkThirdP = document.querySelector('.context-projects-3 p');
   const myRecentWorkThirdLi = document.querySelector('.myRecentWorkThirdLi');
 
-  // third recent
-
-  // recents modal
   const myRecentWorkNorm = document.querySelector('.section-body');
   const myRecentWorkNormAbout = document.querySelector('.section-about');
   const myRecentWorkNormContact = document.querySelector('.section-contact');
@@ -91,13 +87,6 @@ window.addEventListener('load', () => {
   const myRecentModalBtnLive = document.querySelector('#modal-see-btn');
   const myRecentModalBtnSrc = document.querySelector('#modal-source-btn');
 
-  // modal-source-btn
-
-  // recents modal
-
-  // recent times
-
-  // recent times
   const myRecentWork = {
     a: 'a',
     first: {
@@ -182,17 +171,17 @@ window.addEventListener('load', () => {
       }
     });
   });
+  const registerList = JSON.parse(localStorage.getItem('register'));
+  contactMessage.value = registerList.message;
+  contactName.value = registerList.name;
+  email.value = registerList.email;
 });
 
-// My Recent Works
-
-// Form Valitation
-
-const form = document.querySelector('#contact-form');
-const email = document.querySelector('#email');
 const msg = document.querySelector('small');
 
 form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
   const checkEmail = email.value.toLowerCase();
   if (checkEmail !== email.value) {
     event.preventDefault();
@@ -200,7 +189,10 @@ form.addEventListener('submit', (event) => {
     msg.style.color = 'red';
     msg.focus();
   } else {
-    msg.innerText = 'Succes';
-    msg.style.color = 'green';
+    contactValues.name = contactName.value;
+    contactValues.email = email.value;
+    contactValues.message = contactMessage.value;
+    localStorage.clear();
+    localStorage.setItem('register', JSON.stringify(contactValues));
   }
 });
