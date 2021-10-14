@@ -185,3 +185,22 @@ window.addEventListener('load', () => {
 });
 
 // My Recent Works
+
+// Form Valitation
+
+const form = document.querySelector('#contact-form');
+const email = document.querySelector('#email');
+const msg = document.querySelector('small');
+
+form.addEventListener('submit', (event) => {
+  const checkEmail = email.value.toLowerCase();
+  if (checkEmail !== email.value) {
+    event.preventDefault();
+    msg.innerText = 'Email Field should be in Lowercase';
+    msg.style.color = 'red';
+    msg.focus();
+  } else {
+    msg.innerText = 'Succes';
+    msg.style.color = 'green';
+  }
+});
