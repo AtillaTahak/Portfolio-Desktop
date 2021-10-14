@@ -55,23 +55,17 @@ document.addEventListener('click', (event) => {
 }, false);
 
 window.addEventListener('load', () => {
-  // first recent
+
   const myRecentWorkFirstTitle = document.querySelector('#myRecentWorktitle1');
   const myRecentWorkFirstP = document.querySelector('#myRecentWorkP1');
   const myRecentWorkFirstImg = document.querySelector('.project-img img').src;
   const myRecentWorkFirstTags = document.querySelector('#myRecentWorkLi1');
-  // first recent
 
-  // second recent
   const myRecentWorkSecond = document.querySelector('.context-projects-2');
   const myRecentWorkSecondImg = getComputedStyle(myRecentWorkSecond);
   const myRecentWorkSecondSpan = document.querySelector('.context-projects-2 span');
   const myRecentWorkSecondP = document.querySelector('.context-projects-2 p');
   const myRecentWorkSecondLi = document.querySelector('.myRecentWorkSecondLi');
-
-  // second recent
-
-  // third recent
 
   const myRecentWorkThird = document.querySelector('.context-projects-3');
   const myRecentWorkThirdImg = getComputedStyle(myRecentWorkThird);
@@ -79,9 +73,6 @@ window.addEventListener('load', () => {
   const myRecentWorkThirdP = document.querySelector('.context-projects-3 p');
   const myRecentWorkThirdLi = document.querySelector('.myRecentWorkThirdLi');
 
-  // third recent
-
-  // recents modal
   const myRecentWorkNorm = document.querySelector('.section-body');
   const myRecentWorkNormAbout = document.querySelector('.section-about');
   const myRecentWorkNormContact = document.querySelector('.section-contact');
@@ -97,13 +88,6 @@ window.addEventListener('load', () => {
   const myRecentModalBtnLive = document.querySelector('#modal-see-btn');
   const myRecentModalBtnSrc = document.querySelector('#modal-source-btn');
 
-  // modal-source-btn
-
-  // recents modal
-
-  // recent times
-
-  // recent times
   const myRecentWork = {
     a: 'a',
     first: {
@@ -194,9 +178,6 @@ window.addEventListener('load', () => {
   email.value = registerList.email;
 });
 
-// My Recent Works
-
-// Form Valitation
 
 const msg = document.querySelector('small');
 
