@@ -4,6 +4,12 @@ const introPage = document.querySelector('.intro-page');
 const times = document.querySelector('.fa-times');
 const listitem = document.querySelector('.mobile-menu-list');
 
+const contactValues = {};
+const form = document.querySelector('#contact-form');
+const email = document.querySelector('#email');
+const contactName = document.querySelector('#name');
+const contactMessage = document.querySelector('#message');
+
 menu.addEventListener('click', () => {
   introPage.style.display = 'none';
   menuList.style.display = 'flex';
@@ -182,17 +188,21 @@ window.addEventListener('load', () => {
       }
     });
   });
+  const registerList = JSON.parse(localStorage.getItem('register'));
+  contactMessage.value = registerList.message;
+  contactName.value = registerList.name;
+  email.value = registerList.email;
 });
 
 // My Recent Works
 
 // Form Valitation
 
-const form = document.querySelector('#contact-form');
-const email = document.querySelector('#email');
 const msg = document.querySelector('small');
 
 form.addEventListener('submit', (event) => {
+  event.preventDefault();
+
   const checkEmail = email.value.toLowerCase();
   if (checkEmail !== email.value) {
     event.preventDefault();
@@ -200,7 +210,10 @@ form.addEventListener('submit', (event) => {
     msg.style.color = 'red';
     msg.focus();
   } else {
-    msg.innerText = 'Succes';
-    msg.style.color = 'green';
+    contactValues.name = contactName.value;
+    contactValues.email = email.value;
+    contactValues.message = contactMessage.value;
+    localStorage.clear();
+    localStorage.setItem('register', JSON.stringify(contactValues));
   }
 });
