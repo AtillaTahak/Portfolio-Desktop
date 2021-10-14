@@ -55,7 +55,6 @@ document.addEventListener('click', (event) => {
 }, false);
 
 window.addEventListener('load', () => {
-
   const myRecentWorkFirstTitle = document.querySelector('#myRecentWorktitle1');
   const myRecentWorkFirstP = document.querySelector('#myRecentWorkP1');
   const myRecentWorkFirstImg = document.querySelector('.project-img img').src;
@@ -177,7 +176,6 @@ window.addEventListener('load', () => {
   contactName.value = registerList.name;
   email.value = registerList.email;
 });
-
 
 const msg = document.querySelector('small');
 
