@@ -172,7 +172,7 @@ window.addEventListener('load', () => {
     });
   });
   const registerList = JSON.parse(localStorage.getItem('register'));
-  contactMessage.value = registerList.message;
+  contactMessage.value = registerList;
   contactName.value = registerList.name;
   email.value = registerList.email;
 });
